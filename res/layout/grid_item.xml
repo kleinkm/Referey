@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2px">
+        <TextView android:id="@+id/item1"
+        	android:text="authors"
+        	android:layout_height="fill_parent" android:layout_width="fill_parent" android:textSize="11sp" android:lines="1" android:scrollHorizontally="true" android:ellipsize="middle"/>
+        <TextView android:id="@+id/item2"
+	        android:text="title"
+	        android:layout_height="fill_parent"
+	        android:layout_width="fill_parent"
+	    android:textStyle="bold" android:textSize="12sp"/>
+	    <TextView android:id="@+id/item3"
+	        android:text="citation"
+	        android:layout_height="fill_parent"
+	        android:layout_width="fill_parent"
+	    android:textStyle="italic" android:textSize="9sp" android:lines="1" android:ellipsize="middle" android:scrollHorizontally="true"/>
+</LinearLayout>

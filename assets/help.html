@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.2  (Unix)">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		P.western { font-family: "Arial", sans-serif; font-size: 11pt }
+		P.cjk { font-size: 10pt }
+		H1 { margin-bottom: 0.0cm; margin-left: 0.5cm}
+		H1.western { font-family: "Arial", sans-serif; font-size: 24pt }
+		H1.cjk { font-family: "DejaVu Sans"; font-size: 24pt }
+		H1.ctl { font-family: "Lohit Hindi"; font-size: 24pt }
+		H2 { margin-bottom: 0.21cm }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: normal; color:blue }
+		H2.cjk { font-size: 14pt; font-style: italic; font-weight: normal }
+		H2.ctl { font-family: "Lohit Hindi"; font-size: 14pt; font-style: italic }
+		H3 { margin-top: 0.22cm; margin-bottom: 0.21cm; page-break-before: auto; page-break-after: auto }
+		H3.western { font-family: "Arial", sans-serif; font-size: 12pt; font-style: italic; color:darkblue }
+		H3.ctl { font-family: "Lohit Hindi" }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="de-DE" DIR="LTR">
+<table border="0">
+  <tr>
+    <th><img src="referey_icon_72.png" width="72" height="72" "></th>
+    <th><H1 LANG="en-AU" CLASS="western" ALIGN=LEFT>Referey 0.8.6</H1></th>
+  </tr>
+</table>
+<hr>
+<H2 LANG="en-AU" CLASS="western">Description</H2>
+<P CLASS="western" STYLE="margin-bottom: 0cm">Referey
+allows you to view your Mendeley (<A HREF="http://www.mendeley.com/">http://www.mendeley.com</A>)
+database on your Android phone and open associated local files.
+Please be aware that this is not an official Mendeley application!</P>
+<P LANG="en-AU" CLASS="western" STYLE="margin-bottom: 0cm">Referey expects the Mendeley SQLite database
+and the associated files on the SD card or in your Dropbox. I decided against using 
+the Mendeley Open API, as to my knowledge part of the database is not synchronised to the Mendeley Web
+account and therefore not available via the API. This includes the
+path of associated local files.</P>
+<P LANG="en-AU" CLASS="western" STYLE="margin-bottom: 0cm">Referey has the following functions:<BR>
+- show reference list<BR>
+- filter by collection or group<BR>
+- filter by tags, authors, journal and publication date<BR>
+- sort references<BR>
+- search<BR>
+- show reference details including notes and annotations (only the annotation text is shown)<BR>
+- open associated files from SD card or Dropbox<BR>
+- send file via email</P>
+<P LANG="en-AU" CLASS="western" STYLE="margin-bottom: 0cm">Your use of Referey
+is at your sole risk. Referey is provided "as is" without expressed
+or implied warranty of any kind.</P>
+<P LANG="en-AU" CLASS="western" STYLE="margin-bottom: 0cm">Since version 0.8.1, Referey opens the 
+database with write-access for compatibility reasons. As this may change the "journal mode" of the 
+database you should not sync the Referey database back to Mendeley Desktop.</P>
+<P LANG="en-AU" CLASS="western" STYLE="margin-bottom: 0cm">I am aware that Referey's setup is not easy.
+I may add a setup wizard in the future but due other commitments this
+is unlikely to happen soon.</P>
+<hr>
+<H2 LANG="en-AU" CLASS="western">Preferences</H2>
+<P LANG="en-AU" CLASS="western" STYLE="margin-bottom: 0cm">The
+preference screen can be opened by pressing the
+menu key and choosing “Preferences”. The following options are
+provided:</P>
+<H3 LANG="en-AU" CLASS="western">Database path</H3>
+<P CLASS="western">This is the path
+where you have copied your SQLite database. The following
+page describes how you can find the Mendeley database on your
+computer:<BR><A HREF="http://www.mendeley.com/faq/#locate-database">http://www.mendeley.com/faq/#locate-database</A></P>
+<P LANG="en-AU" CLASS="western">The filename is usually
+„your_email@www.mendeley.com.sqlite“ or „online.sqlite“ if
+you have not entered your email in Mendeley.</P>
+<H3 LANG="en-AU" CLASS="western">PDF folder path</H3>
+<P LANG="en-AU" CLASS="western">This is the path where
+you have copied the files that are associated with your references.
+These may include any file type. However, Referey opens these files
+via an Intent so you need to have an application installed that can
+display the associated file type.</P>
+<H3 LANG="en-AU" CLASS="western">Preserve PDF path</H3>
+<P LANG="en-AU" CLASS="western">As the directory
+structure of the computer is different from an Android phone, Referey
+has to convert the path of associated files. „Preserve PDF path“
+indicates how many levels of the saved path in the SQLite database should be
+preserved.</P>
+<P LANG="en-AU" CLASS="western" STYLE="margin-top: 0.3cm; text-decoration: none">
+<B>Example 1:</B></P>
+<P CLASS="western">The associated
+file has the following location on your
+computer:<BR>C:\Users\name\Documents\References\example.pdf</P>
+<P LANG="en-AU" CLASS="western">You have specified the
+following PDF folder path in Referey: <BR>/sdcard/references</P>
+<P LANG="en-AU" CLASS="western">Preserve PDF path is
+set to: “file.pdf”</P>
+<P LANG="en-AU" CLASS="western">Alternative PDF path conversion is not checked.</P>
+<P LANG="en-AU" CLASS="western">Referey will then look
+for the file at: <BR>/sdcard/references/example.pdf</P>
+<P LANG="en-AU" CLASS="western" STYLE="margin-top: 0.2cm"><B>Example
+2:</B></P>
+<P LANG="en-AU" CLASS="western">The associated file has
+the following location on your
+computer:<BR>C:\Users\name\Documents\References\Collection_A\example.pdf</P>
+<P LANG="en-AU" CLASS="western">You have specified the
+following PDF folder path in Referey: <BR>/sdcard/references</P>
+<P LANG="en-AU" CLASS="western">Preserve PDF path is
+set to: „folder\file.pdf“</P>
+<P LANG="en-AU" CLASS="western">Alternative PDF path conversion is not checked.</P>
+<P LANG="en-AU" CLASS="western">Referey will then look
+for the file at: <BR>/sdcard/references/Collection_A/example.pdf</P>
+<H3 LANG="en-AU" CLASS="western">Alternative PDF path conversion</H3>
+<P LANG="en-AU" CLASS="western">The path conversion as described above
+should work fine for most users. However, if you do not rely on Mendeley's 
+file organizer and if your PDF files are located in different folders with
+different folder depth it will not work. In this case, you can use Referey's alternative path 
+conversion method.</P>
+<P LANG="en-AU" CLASS="western">Let's assume that you have PDF files on your computer located at
+<BR>C:\Users\name\Documents\References\favourites\example1.pdf <i>and</i>
+<BR>C:\Users\name\Documents\References\example2.pdf</P>
+<P LANG="en-AU" CLASS="western">You have specified the
+following PDF folder path in Referey: <BR>/sdcard/references</P>
+<P LANG="en-AU" CLASS="western">Alternative PDF path conversion is checked.</P>
+<P LANG="en-AU" CLASS="western">Remove PDF path is
+set to: 4</P>
+<P LANG="en-AU" CLASS="western">Referey will then remove the first 4 folder levels 
+(Users\name\Documents\References) from the saved path and attached the rest to the
+PDF folder path entered. So, Referey will look for the files at:
+<BR>/sdcard/references/favourites/example1.pdf <i>and</i>
+<BR>/sdcard/references/example2.pdf</P>
+<P LANG="en-AU" CLASS="western">For Windows users: The drive letter will be
+automatically removed and is not counted as a folder.</P>
+<H3 LANG="en-AU" CLASS="western">Font size</H3>
+<P LANG="en-AU" CLASS="western">This defines the font
+size used in the main and details screen.</P>
+<H3 LANG="en-AU" CLASS="western">Use dark theme</H3>
+<P LANG="en-AU" CLASS="western">If this is selected a
+black background will be used.</P>
+<hr>
+<H2 LANG="en-AU" CLASS="western">Main screen</H2>
+<P LANG="en-AU" CLASS="western">The main screen shows a
+list of your references. References shown in blue are unread. Yellow
+indicates favourites and purple denotes favourite and unread (which
+does not make much sense but is theoretically possible).</P>
+<P LANG="en-AU" CLASS="western">You can select the
+collection or group by tapping on the left side of the action bar. 
+</P>
+<P LANG="en-AU" CLASS="western">When you click on the
+filter symbol a dialog will appear. You can select tags, authors,
+the journal and the year of publication.
+Referey will then only show the references that fulfil all these criteria.
+A click on “Reset all” unselects all items. "Reset tab" only unselects the items
+of the current tab.</P>
+<P LANG="en-AU" CLASS="western">You can change the way
+how Referey sorts your references by clicking on the symbol on the
+right part of the action bar.</P>
+<P LANG="en-AU" CLASS="western">A long tap anywhere on the action bar will
+display the current filter criteria.</P>
+<P LANG="en-AU" CLASS="western">The details screen can
+be invoked by tapping on a reference.</P>
+<P LANG="en-AU" CLASS="western">A long tap on a
+reference opens the associated file.</P>
+<hr>
+<H2 CLASS="western">Search</H2>
+<P LANG="en-AU" CLASS="western">Search can be invoked
+by pressing the search key or by pressing the menu key and choosing
+“Search”. The search is performed in the selected collection or
+group. A search in “All documents” only searches in collections
+and not in groups similarly to the original Mendeley Desktop program.
+If several search terms are entered only references where all search
+terms could be found are displayed. The search is performed in title, authors,
+journal name, book title, abstract, year of publication, notes, annotations, 
+tags and keywords. You can exit the search by
+tapping on the search bar that shows up below the action bar.</P>
+<hr>
+<H2 LANG="en-AU" CLASS="western">Details screen</H2>
+<P LANG="en-AU" CLASS="western">This screen shows the
+details of the selected file including notes and annotations that you
+have made in the PDF. However, only the annotation text and not the
+actual position in the PDF is shown. 
+</P>
+<P CLASS="western">„Open File“
+will try and open the associated file via an Intent. If more than one
+file is associated you can choose a
+file from a pop-up list. You need to have an application installed
+that can display this file, for example a PDF reader. This works
+for files that are saved locally on your computer and that have been
+copied to the SD card of your phone.</P>
+<P CLASS="western">„Send file“
+allows you to send the associated file via email.</P>
+<P CLASS="western">„Cancel“
+returns to the main screen.</P>
+<hr>
+<H2 LANG="en-AU" CLASS="western">Dropbox support</H2>
+<P LANG="en-AU" CLASS="western">Dropbox support is experimental and requires
+that the <A HREF="http://market.android.com/details?id=com.dropbox.android">original Dropbox application</A>
+is installed. It does not work with current versions of the Dropbox app anymore as Dropbox has changed the undocumented feature that Referey was using. You may have success by using an older version of the Dropbox app. If the associated files are located in your Dropbox please specify
+the following "PDF folder path" in Preferences:<BR>dropbox://foldername</P>
+<P LANG="en-AU" CLASS="western">Unfortunately, there is no documented way how Referey could inform the Dropbox application 
+that it should refresh its file list. If Referey cannot find a file that was recently added, 
+you may have to manually start the Dropbox application,
+navigate to the folder with the associated files, press the menu key and choose "Refresh".</P>
+<P LANG="en-AU" CLASS="western">If Referey has problems opening files from your Dropbox please enter the following information in your bug report or <A HREF="mailto:kleindev@gmx.de">email</A>: device model, Android version, Dropbox version. Otherwise I cannot try to reproduce the problem as it works fine on my phone.</P>
+</BODY>
+</HTML>

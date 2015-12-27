@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ReferenceDetails" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+<ScrollView android:id="@+id/ScrollView01" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_marginBottom="50dip" android:layout_marginLeft="2px" android:layout_marginRight="2px">
+<TextView android:id="@+id/reference" android:text="Reference details" android:textSize="12sp" android:layout_width="fill_parent" android:layout_height="fill_parent"></TextView>
+</ScrollView>
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="-50dip"><Button android:id="@+id/Button02" android:layout_height="fill_parent" android:layout_weight="2" android:layout_width="fill_parent" android:text="Open File"></Button><Button android:layout_height="fill_parent" android:layout_weight="2" android:layout_width="fill_parent" android:id="@+id/Button03" android:text="Send File"></Button><Button android:id="@+id/Button01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Cancel" android:layout_weight="2"></Button></LinearLayout>
+</LinearLayout>

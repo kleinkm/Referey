@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference android:summary="Filename and path of the Mendeley database file" android:defaultValue="/sdcard/database.sqlite" android:title="Database file with full path" android:key="sqlfilename"></EditTextPreference>
+<EditTextPreference android:title="PDF folder path" android:summary="Path of folder with PDF files" android:defaultValue="/sdcard/referey" android:key="pdf_folder"></EditTextPreference>
+<ListPreference android:key="preserve_path" android:title="Preserve PDF path levels" android:summary="How many levels of the saved path in the database should be preserved at the tail?" android:entries="@array/listArray" android:entryValues="@array/listValues" android:defaultValue="1"></ListPreference>
+<CheckBoxPreference android:key="alternative_path" android:summary="For explanation go to main screen, press menu key and choose 'Help'" android:defaultValue="false" android:title="Alternative PDF path conversion"></CheckBoxPreference>
+<EditTextPreference android:key="remove_path" android:title="Remove PDF path levels" android:summary="How many levels of the saved path in the database should be removed at the head?" android:numeric="integer" android:defaultValue="0"></EditTextPreference>
+<ListPreference android:key="font_size" android:title="Font size" android:summary="Defines font size" android:entries="@array/fontArray" android:entryValues="@array/fontValues" android:defaultValue="14"></ListPreference>
+<CheckBoxPreference android:key="theme" android:summary="Use dark or light theme" android:defaultValue="false" android:title="Use dark theme"></CheckBoxPreference>
+</PreferenceScreen>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/select_tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+    <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50dip" >
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content"></TabWidget>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@android:id/tabcontent">
+            		<ListView android:id="@+id/tagsview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" android:textFilterEnabled="false">
+	</ListView>
+            		<ListView android:id="@+id/authorsview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" android:textFilterEnabled="false">
+	</ListView>
+            		<ListView android:id="@+id/journalsview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true" android:textFilterEnabled="false">
+	</ListView>
+					<LinearLayout android:id="@+id/yearview" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"> 
+						<!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+						<LinearLayout
+    					android:focusable="true" android:focusableInTouchMode="true"
+    					android:layout_width="0px" android:layout_height="0px"/>
+						<com.kmk.Referey.NumberPicker android:id="@+id/yearstart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2" />
+						<TextView android:id="@+id/TextViewSelect01" android:text="  –  " android:gravity="center_vertical" android:textSize="30dip" android:layout_width="wrap_content" android:layout_height="fill_parent"></TextView>
+						<com.kmk.Referey.NumberPicker android:id="@+id/yearend" android:layout_width="fill_parent"	android:layout_height="wrap_content" android:layout_weight="2" />
+					</LinearLayout>
+    </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="-50dip"><Button android:id="@+id/Button01" android:layout_height="fill_parent" android:layout_weight="2" android:layout_width="fill_parent" android:text="OK"></Button><Button android:id="@+id/Button03" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Reset tab" android:layout_weight="2"></Button><Button android:id="@+id/Button02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Reset all" android:layout_weight="2"></Button></LinearLayout>
+</LinearLayout>

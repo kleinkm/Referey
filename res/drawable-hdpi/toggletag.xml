@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_enabled="false"     
+        android:drawable="@drawable/tag_not_enabled" />  
+  <item android:state_enabled="true" android:state_checked="true" android:state_pressed="true"     
+        android:drawable="@drawable/tag_on_pressed" />
+  <item android:state_enabled="true" android:state_checked="true" android:state_focused="true"                           
+        android:drawable="@drawable/tag_on_focused" />
+  <item android:state_enabled="true" android:state_checked="true" android:state_focused="false"     
+        android:drawable="@drawable/tag_on_normal" />
+
+  <item android:state_enabled="true" android:state_checked="false" android:state_pressed="true" 
+        android:drawable="@drawable/tag_off_pressed" />
+  <item android:state_enabled="true" android:state_checked="false" android:state_focused="true" 
+        android:drawable="@drawable/tag_off_focused" />
+  <item android:state_enabled="true" android:state_checked="false" android:state_focused="false" 
+        android:drawable="@drawable/tag_off_normal" />
+
+  <item android:drawable="@drawable/tag_off_normal" />
+</selector>

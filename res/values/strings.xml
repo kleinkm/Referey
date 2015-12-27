@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Referey</string>
+    <string name="collection_prompt">Collection/Group</string>
+    <string name="tags_prompt">Tags</string>
+    <string name="search_hint">Search references</string>
+    <string name="search_title">Sort by</string>
+</resources>

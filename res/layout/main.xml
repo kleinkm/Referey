@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/main"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+	<!-- Header -->
+	<LinearLayout android:background="@drawable/custom_spinner" android:id="@+id/LinearLayout01" android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent">
+	   	<Spinner
+        	android:id="@+id/spinner"
+        	android:layout_width="wrap_content"
+        	android:prompt="@string/collection_prompt"
+        	android:layout_height="fill_parent" android:layout_weight="2" android:background="@drawable/custom_spinner">
+    	</Spinner>
+    	<View android:id="@+id/View01" android:background ="#ffffffff" android:layout_width="1px" android:layout_height="fill_parent"></View>
+    	<com.kmk.Referey.StateButton android:text="@+id/StateButton02" android:id="@+id/StateButton02" android:textOn=" " android:textOff=" " android:background="@drawable/toggletag" android:checked="false" android:layout_height="wrap_content" android:layout_width="wrap_content"></com.kmk.Referey.StateButton>
+    	<View android:id="@+id/View02" android:background ="#ffffffff" android:layout_width="1px" android:layout_height="fill_parent"></View>
+    	<com.kmk.Referey.StateButton android:text="@+id/StateButton01" android:id="@+id/StateButton01" android:textOn="Auth" android:textOff="Auth" android:background="@drawable/togglesort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#ffffffff" android:textColorHighlight="#ffffffff" android:textColorLink="#ffffffff" android:textColorHint="#ffffffff" android:checked="true"></com.kmk.Referey.StateButton>
+	
+
+</LinearLayout>
+
+	<!-- ListView (grid_items)  -->
+	
+	<ListView android:id="@+id/listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fastScrollEnabled="true">
+	</ListView>
+</LinearLayout>
+

@@ -1,0 +1,32 @@
+package com.kmk.Referey;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.webkit.WebView;
+import android.widget.Button;
+
+public class HelpActivity extends Activity {
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+
+   		setTheme(android.R.style.Theme_Light_NoTitleBar);
+    	super.onCreate(savedInstanceState);
+
+		setContentView(R.layout.help);
+		
+		// creating references to the UI Commands
+		WebView webview = (WebView) findViewById(R.id.WebView01);
+		Button OKButton = (Button) findViewById(R.id.Button01);
+		
+		webview.loadUrl("file:///android_asset/help.html"); 
+		
+		OKButton.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+		    	setResult(RESULT_OK);
+		    	finish();
+			}
+		});
+	}
+}

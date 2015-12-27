@@ -1,0 +1,20 @@
+package com.kmk.Referey;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.ToggleButton;
+
+public class StateButton extends ToggleButton {
+	 public  StateButton(Context context, AttributeSet attrs, int defStyle) {
+		 super(context, attrs, defStyle);
+	 }
+	 public  StateButton(Context context, AttributeSet attrs) {
+		 super(context, attrs);
+	 }
+     public  StateButton(Context context) {
+    	 super(context);
+     }
+     @Override
+     public void toggle () { 
+	 }
+}
